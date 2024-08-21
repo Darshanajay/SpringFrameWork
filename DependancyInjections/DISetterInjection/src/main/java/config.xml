@@ -12,7 +12,9 @@
 		 
 
 		 <!--this is our beans-->
-		 
+
+
+	     <!-- with value tag -->
 		 <bean class="com.springcore.Students" name="student1">
 		 	<property name="studentId">
 		 	<value>13</value>
@@ -23,5 +25,22 @@
 		 	<property name="studentAddress">
 		 	<value>"DVG"</value>
 		 	</property>
+		 </bean>
+
+	<!-- with as a value attribute -->
+	<bean class="com.springcore.Students" name="student1">
+		 	<property name="studentId" value="13" />
+		
+		 	<property name="studentName" value="Darshan" />
+		 	
+		 	<property name="studentAddress" value="DVG" />
+		 </bean>
+	<!-- Another object Second bean -->
+	<bean class="com.springcore.Students" name="student2">
+		 	<property name="studentId" value="132" />
+		
+		 	<property name="studentName" value="Darshan2" />
+		 	
+		 	<property name="studentAddress" value="SHG" />
 		 </bean>
 </beans>
