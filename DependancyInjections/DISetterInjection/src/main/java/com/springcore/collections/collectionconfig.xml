@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       	 xmlns:context="http://www.springframework.org/schema/context"
+		 xmlns:p="http://www.springframework.org/schema/p"
+		 xsi:schemaLocation="http://www.springframework.org/schema/beans
+		 http://www.springframework.org/schema/beans/spring-beans.xsd
+		 http://www.springframework.org/schema/context
+		 http://www.springframework.org/schema/context/spring-context.xsd">
+		 
+		 
+		<bean name="Emp" class="com.springcore.collections.Emp">
+			<property name="name" value="Radhe"></property>
+			
+			<property name="phones">
+				<list>
+					<value>2335464321</value>
+					<value>2335461126</value>
+					<value>2335461116</value>
+					<value>2335464121</value>
+					<null></null>
+				</list>
+			</property>
+			
+			<property name="address">
+				<set>
+					<value>Delhi</value>
+					<value>America</value>
+					<value>Londan</value>
+					<value>Gujarath</value>
+				</set>
+			</property>
+			
+			<property name="courses">
+				<map>
+					<entry key="Java" value="5Months"/>
+					<entry key="Java" value="2Months"/>
+					<entry key="C#" value="4Months"/>
+					<entry key="JavaScript" value="6Months"/>
+				</map>
+			</property>
+			
+			<property name="props">
+				<props>
+					<prop key="name">Druva</prop>
+					<prop key="dept">Computer Science</prop>
+				</props>
+			</property>
+		</bean>
+	
+</beans>
