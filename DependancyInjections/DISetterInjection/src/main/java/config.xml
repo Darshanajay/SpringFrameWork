@@ -15,7 +15,7 @@
 
 
 	     <!-- with value tag -->
-		 <bean class="com.springcore.Students" name="student1">
+		 <!-- <bean class="com.springcore.Students" name="student1">
 		 	<property name="studentId">
 		 	<value>13</value>
 		 	</property>
@@ -26,6 +26,7 @@
 		 	<value>"DVG"</value>
 		 	</property>
 		 </bean>
+		  -->
 
 	<!-- with as a value attribute -->
 	<bean class="com.springcore.Students" name="student1">
