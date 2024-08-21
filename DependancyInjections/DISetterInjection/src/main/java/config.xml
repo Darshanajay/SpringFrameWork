@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       	 xmlns:context="http://www.springframework.org/schema/context"
 		 xmlns:p="http://www.springframework.org/schema/p"
 		 xsi:schemaLocation="http://www.springframework.org/schema/beans
 		 http://www.springframework.org/schema/beans/spring-beans.xsd
@@ -28,15 +29,15 @@
 		 </bean>
 		  -->
 
-	<!-- with as a value attribute -->
+	<!-- with as a value attribute 
 	<bean class="com.springcore.Students" name="student1">
 		 	<property name="studentId" value="13" />
 		
 		 	<property name="studentName" value="Darshan" />
 		 	
 		 	<property name="studentAddress" value="DVG" />
-		 </bean>
-	<!-- Another object Second bean -->
+		 </bean>-->
+	<!-- Another object Second bean 
 	<bean class="com.springcore.Students" name="student2">
 		 	<property name="studentId" value="132" />
 		
@@ -44,4 +45,9 @@
 		 	
 		 	<property name="studentAddress" value="SHG" />
 		 </bean>
+		 -->
+		 
+	<!-- Using P schema -->
+	<bean class="com.springcore.Students" name="student1" p:studentId="1343" p:studentName="Darshan from p schema" p:studentAddress="DVG" />
+	<bean class="com.springcore.Students" name="student2" p:studentId="14" p:studentName="Darshan2 from p schema" p:studentAddress="SHG" />
 </beans>
