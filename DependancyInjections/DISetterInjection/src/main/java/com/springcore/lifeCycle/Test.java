@@ -9,14 +9,21 @@ public class Test {
 		
 		
 	AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/lifeCycle/Lconfig.xml");
-	Sprite s1 = (Sprite)  context.getBean("s1");
-	System.out.println(s1);
+//	Sprite s1 = (Sprite)  context.getBean("s1");
+//	System.out.println(s1);
 	//registering shutdown hook
-	context.registerShutdownHook();
+//	context.registerShutdownHook();
+//	
+//	System.out.println(" _________________________________ ");
+//	
+//	Pepsi p1 = (Pepsi) context.getBean("p1");
+//	System.out.println(p1);
 	
-	System.out.println(" _________________________________ ");
+	Example example = (Example) context.getBean("example");
+	System.out.println(example);
 	
-	Pepsi p1 = (Pepsi) context.getBean("p1");
-	System.out.println(p1);
+	
+	
+	
 	}
 }

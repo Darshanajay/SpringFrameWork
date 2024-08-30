@@ -8,23 +8,7 @@
 		 http://www.springframework.org/schema/context
 		 http://www.springframework.org/schema/context/spring-context.xsd">
 		 
-		   <context:annotation-config /> 
-		 
-		 
-		 
-		 <!--
-		 <bean class="com.springcore.lifeCycle.Sprite" name="s1" init-method="init" destroy-method="destroy">
-		 	<property name="price" value="34" />
-		 </bean>
-		 
-		 <bean class="com.springcore.lifeCycle.Pepsi" name="p1">
-		 	<property name="price" value="23" />
-		 </bean>
-		 -->
-		 
-		 <bean class="com.springcore.lifeCycle.Example" name="example">
-		 	<property name="subject" value="Science"></property>
-		 </bean>
+		 <context:component-scan base-package="com.springcore.Stereotype" />
 		 
 		 
 </beans>

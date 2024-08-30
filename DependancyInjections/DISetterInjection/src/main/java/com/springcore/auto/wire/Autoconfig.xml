@@ -7,24 +7,16 @@
 		 http://www.springframework.org/schema/beans/spring-beans.xsd
 		 http://www.springframework.org/schema/context
 		 http://www.springframework.org/schema/context/spring-context.xsd">
-		 
-		   <context:annotation-config /> 
-		 
-		 
-		 
-		 <!--
-		 <bean class="com.springcore.lifeCycle.Sprite" name="s1" init-method="init" destroy-method="destroy">
-		 	<property name="price" value="34" />
-		 </bean>
-		 
-		 <bean class="com.springcore.lifeCycle.Pepsi" name="p1">
-		 	<property name="price" value="23" />
-		 </bean>
-		 -->
-		 
-		 <bean class="com.springcore.lifeCycle.Example" name="example">
-		 	<property name="subject" value="Science"></property>
-		 </bean>
-		 
-		 
+
+		<bean class="com.springcore.auto.wire.Address" name="address">
+			<property name="Street" value="tem street" />
+			<property name="City" value="SHG" />
+			<property name="Pincode" value="33331" />
+		</bean>
+		
+		
+		<bean class="com.springcore.auto.wire.Employe" name="Empl" autowire="byName">
+			<property name="name" value="Darshan"/>
+		</bean>
+		
 </beans>

@@ -10,7 +10,7 @@
 		 
 		 
 		<bean name="Emp" class="com.springcore.collections.Emp">
-			<property name="name" value="Radhe"></property>
+			<property name="name" value="Radhe" />
 			
 			<property name="phones">
 				<list>
@@ -18,7 +18,7 @@
 					<value>2335461126</value>
 					<value>2335461116</value>
 					<value>2335464121</value>
-					<null></null>
+					<null />
 				</list>
 			</property>
 			

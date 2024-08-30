@@ -1,0 +1,8 @@
+XML
+@Autowire Modes
+
+NO
+byName  // In IOC container byName module find the class by name of the class if finding name is present in xml file it will inject to class if there is class not found it will give null
+byType  // In IOC container byType module find the class by type means location of the class given in xml file 
+constructor // It check By constructer
+autodetect
