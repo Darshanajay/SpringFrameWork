@@ -11,6 +11,10 @@ public class Test {
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/Stereotype/Sterconfig.xml");
 		Student s1 = (Student) context.getBean("student");
 		System.out.println(s1);
+		System.out.println(s1.hashCode());
+		
+		Student s2 = (Student) context.getBean("student");
+		System.out.println(s2.hashCode()); //Both object have same hashCode this is called Singleton
 	}
 
 }
